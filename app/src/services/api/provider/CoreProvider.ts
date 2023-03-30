@@ -51,7 +51,7 @@ export default abstract class CoreProvider<C extends ConnectionLike> {
         'Accept-Encoding': 'gzip',
       },
       body: query,
-      // credentials: 'include', // Error : The value of the 'Access-Control-Allow-Origin' header in the response must not be the wildcard '*' when the request's credentials mode is 'include'.
+      credentials: 'include', // Error : The value of the 'Access-Control-Allow-Origin' header in the response must not be the wildcard '*' when the request's credentials mode is 'include'.
     };
     return init;
   }
